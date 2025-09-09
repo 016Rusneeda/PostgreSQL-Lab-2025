@@ -349,12 +349,17 @@ WHERE r.rolname NOT LIKE 'pg_%';
 ```
 
 **บันทึกผลการทดลอง - Step 7:**
-```
-ใส่ Screenshot ของ:
+
 1. ผลการสร้าง users ทั้งหมด
+<img width="691" height="574" alt="image" src="https://github.com/user-attachments/assets/52e886d0-a73f-4990-8dc7-fbc663461e74" />
+
 2. ผลการรัน \du+
+<img width="1078" height="225" alt="image" src="https://github.com/user-attachments/assets/260248f0-bb82-4f4a-b345-3bfdc44dad3b" />
+
 3. ผลการ query pg_roles
-```
+<img width="1104" height="461" alt="image" src="https://github.com/user-attachments/assets/c6bf8313-04f0-4ca8-84fd-16cce92a3440" />
+
+
 
 ### Step 8: การจัดการสิทธิ์ User
 
