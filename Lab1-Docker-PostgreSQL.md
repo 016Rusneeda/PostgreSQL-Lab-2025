@@ -130,9 +130,11 @@ docker volume create postgres-config
 **คำอธิบาย**: Docker Volume จะทำให้ข้อมูลคงอยู่แม้ Container จะถูกลบ
 
 **บันทึกผลการทดลอง - Step 2:**
-```
-ใส่ Screenshot ของผลการรัน docker volume ls และ docker volume inspect postgres-data ที่นี่
-```
+
+<img width="846" height="90" alt="image" src="https://github.com/user-attachments/assets/e5e23bda-fd14-41bf-af1c-4c6e0d79998a" />
+<img width="970" height="269" alt="image" src="https://github.com/user-attachments/assets/8a3d72d2-eae9-4851-a685-905387abee8a" />
+
+
 
 ### Step 3: Create PostgreSQL Container with Volume
 
