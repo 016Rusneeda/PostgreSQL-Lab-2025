@@ -166,9 +166,8 @@ docker run --name postgres-lab \ ลบ\ออก
 - `-c shared_buffers=256MB`: กำหนด shared buffers
 
 **บันทึกผลการทดลอง - Step 3:**
-```
-ใส่ Screenshot ของผลการรัน docker run ที่นี่
-```
+<img width="1376" height="144" alt="image" src="https://github.com/user-attachments/assets/22cc8f93-9e4f-4b8c-951a-e0b84208353c" />
+
 
 ### Step 4: Verify Container Status and Resource Usage
 
@@ -187,12 +186,18 @@ docker volume inspect postgres-data
 ```
 
 **บันทึกผลการทดลอง - Step 4:**
-```
-ใส่ Screenshot ของ:
+
+
 1. ผลการรัน docker ps
+<img width="1360" height="72" alt="image" src="https://github.com/user-attachments/assets/6fe01bd6-189b-4ed3-8852-3763fbf95bf9" />
+
 2. ส่วนหนึ่งของ docker logs postgres-lab
+<img width="1365" height="813" alt="image" src="https://github.com/user-attachments/assets/660a0c13-aa6f-4f80-8cfc-b10a8f708cab" />
+
 3. ผลการรัน docker stats
-```
+<img width="997" height="96" alt="image" src="https://github.com/user-attachments/assets/f7e56a7f-be25-44b8-afbd-f400d9dc53dc" />
+
+
 
 ### Step 5: Connect to PostgreSQL และตรวจสอบ Configuration
 
@@ -232,12 +237,16 @@ WHERE name IN ('shared_buffers', 'work_mem', 'maintenance_work_mem', 'effective_
 ```
 
 **บันทึกผลการทดลอง - Step 5:**
-```
-ใส่ Screenshot ของ:
+
 1. ผลการรัน SELECT version();
+<img width="1086" height="175" alt="image" src="https://github.com/user-attachments/assets/610a3095-15d2-4f6f-9f08-b98fa0ed6776" />
+
 2. ผลการรัน SHOW shared_buffers; SHOW work_mem; SHOW maintenance_work_mem;SHOW effective_cache_size;
+<img width="459" height="570" alt="image" src="https://github.com/user-attachments/assets/721244f9-d837-465f-b74a-4b203edce4d2" />
+
 3. ผลการรัน \l และ \du
-```
+<img width="1179" height="423" alt="image" src="https://github.com/user-attachments/assets/c70b7828-7ae5-4282-aa22-66d14df191ab" />
+
 
 ### Step 6: Database Management Operations
 
@@ -276,12 +285,18 @@ WHERE datname = 'lab_db';
 ```
 
 **บันทึกผลการทดลอง - Step 6:**
-```
+
 ใส่ Screenshot ของ:
 1. ผลการสร้าง lab_db
+<img width="893" height="161" alt="image" src="https://github.com/user-attachments/assets/2513574a-f8e8-4f23-8ecb-7be97071ae3e" />
+
 2. ผลการรัน \l+ แสดงฐานข้อมูลทั้งหมด
+<img width="1167" height="286" alt="image" src="https://github.com/user-attachments/assets/f819bd54-287a-4146-af03-dcae5f224d83" />
+
 3. ผลการ query ข้อมูลฐานข้อมูล
-```
+<img width="842" height="383" alt="image" src="https://github.com/user-attachments/assets/2c7197ce-9ccd-40b2-ac18-a6841e252371" />
+
+
 
 ### Step 7: User และ Role Management
 
