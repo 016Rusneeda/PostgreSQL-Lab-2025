@@ -635,13 +635,21 @@ SET search_path TO public;
 ```
 
 **บันทึกผลการทดลอง - Step 10:**
-```
+
 ใส่ Screenshot ของ:
 1. ผลการแสดง search_path
+<img width="330" height="156" alt="image" src="https://github.com/user-attachments/assets/4a69150a-648f-4f5e-b29f-a05f5e8f580d" />
+
 2. ผลการ query ภายใน schema เดียวกัน (sales.customers + sales.orders)
+<img width="876" height="345" alt="image" src="https://github.com/user-attachments/assets/02f5efcc-d5b4-4ea0-bd1f-e77e3f1caca8" />
+
 3. ผลการ JOIN ข้าม schemas (sales + hr + inventory)
+<img width="791" height="404" alt="image" src="https://github.com/user-attachments/assets/af951fde-2f55-433a-8d75-18536208b597" />
+
+
 4. ข้อมูลที่แสดงจาก complex join ข้าม 3 schemas
-```
+<img width="1003" height="541" alt="image" src="https://github.com/user-attachments/assets/57930d6b-d35f-4c6f-ae90-866142afcb45" />
+
 
 ### Step 11: ทดสอบการเชื่อมต่อจาก User อื่น
 
