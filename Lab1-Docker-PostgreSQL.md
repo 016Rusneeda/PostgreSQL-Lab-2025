@@ -419,12 +419,43 @@ GRANT SELECT ON postgres_test_table TO lab_user;
 ```
 ใส่ Screenshot ของ:
 1. ผลการ ALTER USER commands
+<img width="457" height="95" alt="image" src="https://github.com/user-attachments/assets/7f66c776-748e-400f-951b-c519451f2780" />
+
 2. ผลการรัน \dp test_permissions
+<img width="890" height="187" alt="image" src="https://github.com/user-attachments/assets/97d03698-feef-4e64-92c7-e58a80dbf8b6" />
+
 3. ผลการ GRANT commands
+<img width="569" height="74" alt="image" src="https://github.com/user-attachments/assets/60959185-d495-4ad1-b62c-7cee9f973ea9" />
+
 ```
 **คำถาม
  ```
 Access Privileges   postgres=arwdDxtm/postgres มีความหมายอย่างไร
+
+คำอธิบายสิทธิ์
+postgres= คือชื่อผู้ใช้ (role) ที่ถูกกำหนดสิทธิ์
+
+arwdDxtm/ คือชุดสิทธิ์ที่ผู้ใช้ "postgres" ได้รับ โดยแต่ละตัวอักษรมีความหมายดังนี้:
+
+a: INSERT (เพิ่มข้อมูล)
+
+r: SELECT (อ่านข้อมูล)
+
+w: UPDATE (แก้ไขข้อมูล)
+
+d: DELETE (ลบข้อมูล)
+
+D: TRUNCATE (ลบข้อมูลทั้งหมดในตาราง)
+
+x: REFERENCES (อ้างอิงข้อมูลในตารางอื่น)
+
+t: TRIGGER (สร้าง/ลบ trigger)
+
+m: TEMPORARY (สร้างตารางชั่วคราว)
+
+/postgres คือชื่อเจ้าของฐานข้อมูล (owner) ที่กำหนดสิทธิ์เหล่านี้
+
+โดยสรุปคือ ผู้ใช้ "postgres" มีสิทธิ์ในการ เพิ่ม, อ่าน, แก้ไข, ลบ, TRUNCATE, REFERENCES, TRIGGER และ TEMPORARY สำหรับฐานข้อมูลที่ตัวเองเป็นเจ้าของอยู่
 
 
  ```
