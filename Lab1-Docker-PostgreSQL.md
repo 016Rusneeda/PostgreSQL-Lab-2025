@@ -1065,7 +1065,16 @@ INSERT INTO ecommerce.order_items (order_id, product_id, quantity, price) VALUES
 ```
 ใส่ Screenshot ของ:
 1. โครงสร้าง schemas และ tables (\dn+, \dt ecommerce.*)
+
+<img width="941" height="502" alt="image" src="https://github.com/user-attachments/assets/77e83be3-9442-497b-8068-f6e65c809882" />
+
 2. ข้อมูลตัวอย่างในตารางต่างๆ
+<img width="656" height="214" alt="image" src="https://github.com/user-attachments/assets/e5df66d4-e5d0-47cf-87e8-a2beaaad9f1e" />
+<img width="1117" height="472" alt="image" src="https://github.com/user-attachments/assets/3856fa23-c1d9-47d0-aaa9-2ece8fb89f94" />
+<img width="962" height="271" alt="image" src="https://github.com/user-attachments/assets/9fe365b7-5794-45c0-b11a-28b5697af80b" />
+<img width="662" height="424" alt="image" src="https://github.com/user-attachments/assets/3a61f8c0-b726-47d3-a57c-769b29a78c1f" />
+<img width="657" height="646" alt="image" src="https://github.com/user-attachments/assets/38b71d2b-fa0c-442b-a9af-a7ec70bed327" />
+
 3. ผลการรัน queries ที่สร้าง
 4. การวิเคราะห์ข้อมูลที่ได้
 ```
