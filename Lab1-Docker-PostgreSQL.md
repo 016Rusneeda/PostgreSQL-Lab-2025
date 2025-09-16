@@ -1062,22 +1062,23 @@ INSERT INTO ecommerce.order_items (order_id, product_id, quantity, price) VALUES
 ```
 
 **ผลการทำแบบฝึกหัด 3:**
-```
+
 ใส่ Screenshot ของ:
 1. โครงสร้าง schemas และ tables (\dn+, \dt ecommerce.*)
 
 <img width="941" height="502" alt="image" src="https://github.com/user-attachments/assets/77e83be3-9442-497b-8068-f6e65c809882" />
 
 2. ข้อมูลตัวอย่างในตารางต่างๆ
+3. ผลการรัน queries ที่สร้าง
 <img width="656" height="214" alt="image" src="https://github.com/user-attachments/assets/e5df66d4-e5d0-47cf-87e8-a2beaaad9f1e" />
 <img width="1117" height="472" alt="image" src="https://github.com/user-attachments/assets/3856fa23-c1d9-47d0-aaa9-2ece8fb89f94" />
 <img width="962" height="271" alt="image" src="https://github.com/user-attachments/assets/9fe365b7-5794-45c0-b11a-28b5697af80b" />
 <img width="662" height="424" alt="image" src="https://github.com/user-attachments/assets/3a61f8c0-b726-47d3-a57c-769b29a78c1f" />
 <img width="657" height="646" alt="image" src="https://github.com/user-attachments/assets/38b71d2b-fa0c-442b-a9af-a7ec70bed327" />
 
-3. ผลการรัน queries ที่สร้าง
+
 4. การวิเคราะห์ข้อมูลที่ได้
-```
+
 
 
 ## การทดสอบความเข้าใจ
@@ -1086,13 +1087,27 @@ INSERT INTO ecommerce.order_items (order_id, product_id, quantity, price) VALUES
 ตอบคำถามต่อไปนี้:
 
 1. อธิบายความแตกต่างระหว่าง Named Volume และ Bind Mount ในบริบทของ PostgreSQL
+
 2. เหตุใด shared_buffers จึงควรตั้งเป็น 25% ของ RAM?
+
 3. การใช้ Schema ช่วยในการจัดการฐานข้อมูลขนาดใหญ่อย่างไร?
+
 4. อธิบายประโยชน์ของการใช้ Docker สำหรับ Database Development
+
 
 **คำตอบ Quiz 1:**
 ```
-เขียนคำตอบที่นี่
+ข้อ1
+- Named Volume: Docker จัดการที่เก็บข้อมูลให้อัตโนมัติ ย้ายข้อมูลได้ง่าย เหมาะกับข้อมูลฐานข้อมูล
+- Bind Mount: คุณต้องกำหนดเส้นทางโฟลเดอร์บนคอมพิวเตอร์ของคุณเอง เข้าถึงไฟล์ง่าย เหมาะกับไฟล์ตั้งค่า
+ข้อ2
+- 25% เป็นค่าที่ เหมาะสมที่สุด เพราะมันช่วยให้ PostgreSQL ทำงานได้เร็วขึ้นโดยการเก็บข้อมูลที่ใช้บ่อยไว้ในหน่วยความจำ และยังเหลือพื้นที่ RAM ให้ระบบปฏิบัติการและโปรแกรมอื่นๆ ทำงานได้ตามปกติ
+ข้อ3
+-Schema เหมือนการสร้าง โฟลเดอร์ ในฐานข้อมูล ทำให้จัดระเบียบ ตารางที่เกี่ยวข้องเข้าด้วยกัน ป้องกัน ชื่อตารางซ้ำ ควบคุมสิทธิ์ การเข้าถึงได้ง่ายขึ้น
+ข้อ4
+-ความสอดคล้อง: ทุกคนในทีมใช้ฐานข้อมูลเวอร์ชันและสภาพแวดล้อมเดียวกัน
+-ความรวดเร็ว: ตั้งค่าฐานข้อมูลได้ในไม่กี่วินาที
+-ความยืดหยุ่น: สามารถสร้างและลบฐานข้อมูลสำหรับทดสอบได้ง่ายๆ โดยไม่กระทบกับข้อมูลจริง
 ```
 
 
