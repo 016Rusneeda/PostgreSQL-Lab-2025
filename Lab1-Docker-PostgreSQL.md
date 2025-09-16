@@ -876,6 +876,8 @@ docker volume create postgres-data
 1. คำสั่งที่ใช้สร้าง container
 2. docker ps แสดง container ใหม่
 3. docker stats แสดงการใช้ resources
+<img width="1131" height="188" alt="image" src="https://github.com/user-attachments/assets/f0f9bd81-6520-4f9b-a46a-14153d9ac587" />
+
 ```
 
 ### แบบฝึกหัด 2: User Management และ Security
@@ -897,12 +899,21 @@ docker volume create postgres-data
 ```
 
 **ผลการทำแบบฝึกหัด 2:**
-```
+
 ใส่ Screenshot ของ:
 1. การสร้าง roles และ users
+<img width="821" height="329" alt="image" src="https://github.com/user-attachments/assets/5c8b0597-a5da-49f9-aba9-6268eb53ef99" />
+
 2. ผลการรัน \du แสดงผู้ใช้ทั้งหมด
+<img width="1272" height="289" alt="image" src="https://github.com/user-attachments/assets/fc2db1bd-2ddb-4ba6-9bf9-3200dfdaa316" />
+
 3. ผลการทดสอบเชื่อมต่อด้วย user ต่างๆ
-```
+<img width="1361" height="184" alt="image" src="https://github.com/user-attachments/assets/23475c21-e902-4219-bee3-8c8bb047889e" />
+
+<img width="1362" height="150" alt="image" src="https://github.com/user-attachments/assets/3e54bd51-4b97-4d55-98e9-3c06cc727a76" />
+
+<img width="1372" height="184" alt="image" src="https://github.com/user-attachments/assets/77bad54d-3728-4b15-b109-4c2e189f4ada" />
+
 
 ### แบบฝึกหัด 3: Schema Design และ Complex Queries
 **คำสั่ง**: สร้างระบบฐานข้อมูลร้านค้าออนไลน์:
